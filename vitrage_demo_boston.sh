@@ -33,8 +33,6 @@ sudo hostname compute-0-0
 
 echo "vitrage_demo.sh: Running stack.sh"
 ./stack.sh
-./unstack.sh
-./stack.sh
 wget -O /opt/stack/horizon/static/app/mess_it_up.php https://github.com/Idandos/somefiles/raw/master/vitrage_devstack/mess_it_up.php
 sed -i.bak 's/stacks:global_index": "rule:deny_everybody/stacks:global_index": "/g' /etc/heat/policy.json
 
