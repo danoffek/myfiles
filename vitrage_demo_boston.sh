@@ -17,7 +17,7 @@ sudo service zabbix-agent start
 echo "vitrage_demo.sh: Getting local.conf"
 cd /home/stack/devstack
 mv local.conf local.conf.orig
-wget https://github.com/Idandos/somefiles/raw/master/vitrage_devstack/local.conf
+wget -O /home/stack/devstack/local.conf https://raw.githubusercontent.com/danoffek/myfiles/master/lablocal.conf
 wget -O /etc/vitrage/zabbix_conf.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/zabbix_conf.yaml
 #wget -O /etc/vitrage/static_datasources/compute-0-1.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/static_datasources/compute-0-1.yaml
 #wget -O /etc/vitrage/static_datasources/compute-0-1-instances.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/static_datasources/compute-0-1-instances.yaml
