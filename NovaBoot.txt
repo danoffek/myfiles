@@ -1,1 +1,2 @@
 Dogfood nova boot :
+nova boot doffek-lab-boston-0405 --nic net-id=3b737885-dd1a-456a-ae98-cb3e928f6c94 --availability-zone zone0 --flavor 6a453362-4166-47a2-bb40-b908a198dc08 --image 9541626b-b615-4e74-9eba-c3b3231cb5bd --user-data ovh_cloud_init_boston --security-groups 8cda0d44-98f4-4813-b082-4146388fd698
