@@ -22,11 +22,11 @@ wget -O /etc/vitrage/zabbix_conf.yaml https://raw.githubusercontent.com/Idandos/
 #wget -O /etc/vitrage/static_datasources/compute-0-1.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/static_datasources/compute-0-1.yaml
 #wget -O /etc/vitrage/static_datasources/compute-0-1-instances.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/static_datasources/compute-0-1-instances.yaml
 mkdir /home/stack/templates
-wget -O /etc/vitrage/templates/host_high_cpu_load_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_high_cpu_load_scenarios.yaml
-wget -O /etc/vitrage/templates/host_public_nic_failure_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_public_nic_failure_scenarios.yaml
-#wget -O /etc/vitrage/templates/host_high_memory_load_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_high_memory_load_scenarios.yaml
-wget -O /etc/vitrage/templates/stack_instance_critical_problem.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/stack_instance_critical_problem.yaml
-wget -O /etc/vitrage/templates/stack_instance_problem.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/stack_instance_problem.yaml
+wget -O /home/stack/templates/host_high_cpu_load_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_high_cpu_load_scenarios.yaml
+wget -O /home/stack/templates/host_public_nic_failure_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_public_nic_failure_scenarios.yaml
+#wget -O /home/stack/templates/host_high_memory_load_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_high_memory_load_scenarios.yaml
+wget -O /home/stack/templates/stack_instance_critical_problem.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/stack_instance_critical_problem.yaml
+wget -O /home/stack/templates/stack_instance_problem.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/stack_instance_problem.yaml
 wget -O /home/stack/heat_stack.yaml https://github.com/Idandos/somefiles/raw/master/vitrage_devstack/some_stack.yaml
 
 sudo hostname compute-0-0
