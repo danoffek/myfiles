@@ -1,0 +1,18 @@
+#cloud-config
+users:
+  - default
+  - name: stack
+    lock_passwd: False
+    sudo: ["ALL=(ALL) NOPASSWD:ALL\nDefaults:stack !requiretty"]
+    shell: /bin/bash
+write_files:
+  - content: |
+        #!/bin/sh
+        wget -O /home/stack/vitrage_demo_boston.sh https://raw.githubusercontent.com/danoffek/myfiles/master/vitrage_demo_boston.sh
+        cd /home/stack
+        chmod +x vitrage_demo_boston.sh
+        ./vitrage_demo_boston.sh
+    path: /home/stack/start.sh
+    permissions: 0755
+runcmd:
+  - su -l stack ./start.sh
