@@ -1,5 +1,4 @@
 #!/bin/sh
-su stack
 
 # Close STDOUT file descriptor
 exec 1<&-
@@ -9,6 +8,8 @@ exec 2<&-
 exec 1<>/tmp/vitrage_demo.log
 # Redirect STDERR to STDOUT
 exec 2>&1
+
+su - stack<<EOF
 
 echo "Starting zabbix"
 sudo service zabbix-server start
@@ -49,3 +50,5 @@ openstack subnet create subnetA --network NetA --subnet-range 8.8.8.0/24 --gatew
 
 #echo "vitrage_demo.sh: Creating Heat Stack"
 openstack stack create app --template https://github.com/Idandos/somefiles/raw/master/vitrage_devstack/some_stack.yaml
+
+EOF
