@@ -9,7 +9,7 @@ exec 1<>/tmp/vitrage_demo.log
 # Redirect STDERR to STDOUT
 exec 2>&1
 
-su - stack<<EOF
+su - stack << EOF
 
 echo "Starting zabbix"
 sudo service zabbix-server start
