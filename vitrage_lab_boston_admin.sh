@@ -23,6 +23,7 @@ wget -O /home/stack/devstack/local.conf https://raw.githubusercontent.com/danoff
 wget -O /etc/vitrage/zabbix_conf.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/zabbix_conf.yaml
 #wget -O /etc/vitrage/static_datasources/compute-0-1.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/static_datasources/compute-0-1.yaml
 #wget -O /etc/vitrage/static_datasources/compute-0-1-instances.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/static_datasources/compute-0-1-instances.yaml
+wget -O /etc/vitrage/datasources_values/heat.stack.yaml https://raw.githubusercontent.com/danoffek/myfiles/master/heat.stack.yaml
 mkdir /home/stack/templates
 wget -O /home/stack/templates/host_high_cpu_load_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_high_cpu_load_scenarios.yaml
 wget -O /home/stack/templates/host_public_nic_failure_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_public_nic_failure_scenarios.yaml
