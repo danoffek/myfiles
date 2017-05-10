@@ -30,7 +30,6 @@ wget -O /home/stack/templates/host_public_nic_failure_scenarios.yaml https://raw
 #wget -O /home/stack/templates/host_high_memory_load_scenarios.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/host_high_memory_load_scenarios.yaml
 wget -O /home/stack/templates/stack_instance_critical_problem.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/stack_instance_critical_problem.yaml
 wget -O /home/stack/templates/stack_instance_problem.yaml https://raw.githubusercontent.com/Idandos/somefiles/master/vitrage_devstack/templates/stack_instance_problem.yaml
-wget -O /home/stack/heat_stack.yaml https://github.com/Idandos/somefiles/raw/master/vitrage_devstack/some_stack.yaml
 
 sudo hostname compute-0-0
 
