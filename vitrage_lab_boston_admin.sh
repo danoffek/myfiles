@@ -49,6 +49,6 @@ openstack network create NetA --share
 openstack subnet create subnetA --network NetA --subnet-range 8.8.8.0/24 --gateway 8.8.8.1
 
 #echo "vitrage_demo.sh: Creating Heat Stack"
-openstack stack create app --template https://github.com/Idandos/somefiles/raw/master/vitrage_devstack/some_stack.yaml
+#openstack stack create app --template https://github.com/Idandos/somefiles/raw/master/vitrage_devstack/some_stack.yaml
 
 EOF
